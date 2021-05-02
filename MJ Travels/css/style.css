@@ -395,3 +395,54 @@ h3 {
   padding: 0.5em 0.8em;
   letter-spacing: 0.5rem;
 }
+
+/* ############# Contact us Styling ############  */
+.contact-form {
+  padding: 5rem 0;
+  font-size: 2rem;
+  background-color: #f7f7f7;
+}
+
+.contact-form .form-wrapper {
+  border: 10px solid red;
+}
+.contact-form .form-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact-form .company-address {
+  width: 49%;
+  border: 2px solid green;
+  float: left;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.form-wrapper .address-group {
+  margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+  max-width: 90%;
+  min-height: 30rem;
+  object-fit: cover;
+  object-position: right;
+}
+
+.contact-form .company-address i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.contact-form .company-address h2 {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.contact-form .form {
+  width: 49%;
+  border: 2px solid green;
+  float: right;
+  background-color: #fff;
+}
