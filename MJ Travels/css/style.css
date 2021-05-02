@@ -256,3 +256,14 @@ h3 {
     rgba(252, 251, 44, 1) 97%
   );
 }
+
+/* ######## footer styling ################# */
+.footer {
+  background-color: #263238;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 2rem;
+}
+.social-media-links i {
+  margin: 2rem;
+}
