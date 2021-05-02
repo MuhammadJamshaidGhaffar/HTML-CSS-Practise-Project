@@ -72,6 +72,10 @@ h3 {
   color: #555555;
 }
 
+.bg-dark {
+  background-color: #263238;
+}
+
 .btn {
   display: inline-block;
   font-weight: 700;
@@ -113,7 +117,7 @@ h3 {
   position: relative;
 }
 
-.header .navbar a {
+.navbar a {
   color: white;
   text-decoration: none;
 }
@@ -122,15 +126,15 @@ h3 {
   padding: 1rem;
 }
 
-.header .navbar .logo {
+.navbar .logo {
   float: left;
 }
-.header .navbar .nav-items {
+.navbar .nav-items {
   float: right;
   margin-top: 1rem;
 }
 
-.header .navbar .nav-items .nav-item {
+.navbar .nav-items .nav-item {
   display: inline-block;
   padding: 1rem;
   text-transform: uppercase;
@@ -149,7 +153,7 @@ h3 {
   border-bottom: 1px solid #ffffff;
 }
 
-.header .navbar::after {
+.navbar::after {
   content: "";
   display: block;
   clear: both;
@@ -250,10 +254,14 @@ h3 {
 }
 
 .box-2 {
-  background-image: radial-gradient(
-    circle 597px at 93% 9.8%,
-    rgba(255, 61, 89, 1) 1.7%,
-    rgba(252, 251, 44, 1) 97%
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
   );
 }
 
@@ -266,4 +274,124 @@ h3 {
 }
 .social-media-links i {
   margin: 2rem;
+}
+
+/* ########### About Us Page Styling ############# */
+.about {
+  padding: 5rem 0;
+}
+
+.about-heading::after {
+  content: "";
+  display: block;
+  border: 3px solid #e63946;
+  width: 100%;
+}
+/* ############# about wrapper styling ########### */
+.about-wrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.about-wrapper .left {
+  float: left;
+  width: 50%;
+}
+
+.about-wrapper .right {
+  float: right;
+  width: 50%;
+}
+
+.about-wrapper li::before {
+  content: "\2713";
+  color: #e63946;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+/* ############ count-item styling ############## */
+.counts {
+  margin-top: 3rem;
+}
+
+.counts::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.count-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.count-item span {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #e63946;
+}
+
+.count-item p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #555;
+}
+
+/* ################## banner styling ############# */
+.cta-banner {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  color: #f4f4f4;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+  margin-top: 3rem;
+}
+.cta-banner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cta-banner-left {
+  float: left;
+  width: 60%;
+}
+
+.cta-line {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.cta-banner-right {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+.cta-btn {
+  text-align: center;
+  display: inline-block;
+  color: #f4f4f4;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 4px solid white;
+  padding: 0.5em 0.8em;
+  letter-spacing: 0.5rem;
 }
